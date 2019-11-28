@@ -85,7 +85,7 @@ class Login extends CI_Controller {
               $this->session->set_userdata('login', $data);  
               $this->load->view('headers/header');
               $this->load->view('headers/navbar-admin');
-              $this->load->view('admin/admin');
+              $this->load->view('admin/dashboard_admin');
             }
             else{   //   Si no logró validar
                $data['error']="Usuario o password incorrectos, por favor vuelva a intentar";
@@ -143,5 +143,10 @@ class Login extends CI_Controller {
 	     $this->load->view('headers/header');
 		$this->load->view('headers/login'); 
     }
+
+    
 }
+
+
+
 ?>
