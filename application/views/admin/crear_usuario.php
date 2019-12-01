@@ -13,7 +13,7 @@
                     <h6 class="m-0 font-weight-bold text-primary">Complemente información</h6>
                 </div>
                 <div class="card-body">
-                    <form class="user" action="<?php echo base_url() ?>index.php/usuario/admin" method="POST">
+                    <form class="user" action="<?php echo base_url() ?>index.php/usuarios/crearAdmin" method="POST">
                         <div class="form-group">
                             <input type="text" class="form-control form-control-user" id="name" name="name" aria-describedby="emailHelp" placeholder="Ingrese nombre completo...">
                         </div>
@@ -27,12 +27,11 @@
                         </div>
 
                         <div class="form-group row">
+                        <div class="h5 mb-0 mr-3 font-weight-bold text-gray" style="
+    margin-left: 2%;">Area</div>
                         <div class="col-sm-6 mb-3 mb-sm-0">
-                            <select>
-                                <option value="volvo">Volvo</option>
-                                <option value="saab">Saab</option>
-                                <option value="mercedes">Mercedes</option>
-                                <option value="audi">Audi</option>
+                            <select name="area" id="area">
+                                <option value="1">Volvo</option>
                             </select>
                         </div>
                         </div>

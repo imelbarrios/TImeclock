@@ -24,4 +24,5 @@
   <!-- Page level custom scripts -->
   <script src="<?php echo base_url(); ?>assets/js/demo/datatables-demo.js"></script>  
 
- 
+  <!-- Custom styles for this page -->
+  <link href="<?php echo base_url(); ?>assets/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">

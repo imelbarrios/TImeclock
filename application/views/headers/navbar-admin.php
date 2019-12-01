@@ -38,8 +38,8 @@
   </a>
   <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
     <div class="bg-white py-2 collapse-inner rounded">
-      <a class="collapse-item" href="<?php echo base_url();?>/index.php/menu/crearUsuario">Crear usuarios</a>
-      <a class="collapse-item" href="<?php echo base_url();?>/index.php/menu/listadoUsuario">Listado de usuarios</a>
+      <a class="collapse-item" href="<?php echo base_url();?>/index.php/usuarios/crearUsuario">Crear usuarios</a>
+      <a class="collapse-item" href="<?php echo base_url();?>/index.php/usuarios/index">Listado de usuarios</a>
     </div>
   </div>
 </li>
@@ -88,14 +88,14 @@
 
 <!-- Nav Item - Charts -->
 <li class="nav-item">
-  <a class="nav-link" href="charts.html">
+  <a class="nav-link" href="<?php echo base_url();?>/index.php/areas/index">
     <i class="fas fa-fw fa-plus"></i>
     <span>Areas</span></a>
 </li>
 
 <!-- Nav Item - Charts -->
 <li class="nav-item">
-  <a class="nav-link" href="charts.html">
+  <a class="nav-link" href="<?php echo base_url();?>/index.php/roles/index">
     <i class="fas fa-fw fa-users"></i>
     <span>Roles</span></a>
 </li>

@@ -2,7 +2,7 @@
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Listado de usuario</h1>
+        <h1 class="h3 mb-0 text-gray-800">Areas</h1>
     </div>
 
     <!-- Content Row -->
@@ -19,10 +19,8 @@
                   <thead>
                     <tr>
                       <th>Id</th>
-                      <th>Nombre Completo</th>
-                      <th>Usuario</th>
+                      <th>Nombre</th>
                       <th>Estado</th>
-                      <th>Area</th>
                       <th>Fecha de registro</th>
                     </tr>
                   </thead>
@@ -30,25 +28,21 @@
                   <tbody>
                   <?php 
             $start = 0; 
-            foreach ($usuarios as $datos) 
+            foreach ($areas as $datos) 
             { 
                 ?> 
                 <tr> 
                 <td> 
-                        <?php echo $datos->id_usuario ?> 
+                        <?php echo $datos->id ?> 
                     </td> 
                     <td> 
-                        <?php echo $datos->nombre_completo ?> 
+                        <?php echo $datos->nombre ?> 
                     </td> 
-                    <td> 
-                        <?php echo $datos->nombre_usuario ?> 
-                    </td> 
+                    
                     <td> 
                         <?php echo $datos->estado ?> 
                     </td> 
-                    <td> 
-                        <?php echo $datos->id_area ?> 
-                    </td> 
+                   
                     <td> 
                         <?php echo $datos->fecha_registro ?> 
                     </td> 

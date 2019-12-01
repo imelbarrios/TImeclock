@@ -14,18 +14,22 @@ class Menu extends CI_Controller {
 	}
 
 
-    public function crearUsuario(){
+  
+
+    
+
+    public function areas(){
       //  set($_SESSION['login']);
       $this->load->view('headers/header');
       $this->load->view('headers/navbar-admin');
-      $this->load->view('admin/crear_usuario');
+      $this->load->view('admin/area');
     }
 
-    public function listadoUsuario(){
+    public function roles(){
       //  set($_SESSION['login']);
       $this->load->view('headers/header');
       $this->load->view('headers/navbar-admin');
-      $this->load->view('admin/listado_usuario');
+      $this->load->view('admin/roles');
     }
   
 }
